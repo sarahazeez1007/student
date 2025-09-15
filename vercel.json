@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "name": "student-directory",
+  "builds": [
+    {
+      "src": "student-directory/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
+    }
+  ],
+  "env": {},
+  "build": {
+    "env": {}
+  },
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/.*", "dest": "/index.html" }
+  ],
+  "github": {
+    "enabled": false
+  }
+}
+
+
