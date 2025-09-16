@@ -1,19 +1,8 @@
 {
   "version": 2,
   "name": "student-directory",
-  "builds": [
-    {
-      "src": "student-directory/package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "dist"
-      }
-    }
-  ],
-  "env": {},
-  "build": {
-    "env": {}
-  },
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
   "headers": [
     {
       "source": "/index.html",
@@ -35,5 +24,3 @@
     "enabled": false
   }
 }
-
-
